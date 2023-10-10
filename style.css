@@ -1,0 +1,441 @@
+*{
+  font-family: sans-serif, monospace;
+  font-size: 20px;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box ;
+  user-select: none;
+}
+
+
+/* Inicio Do Tema Escuro E Claro */
+body{
+  transform: scale(0.75);
+  background-image: url(img/wallpaperflare.com_wallpaper\ \(2\).jpg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 2.0s linear;
+  height: 100vh;
+  margin: 0;
+  transition: 2.0s;
+}
+
+body.dark {
+  background-image: url(img/wallpaperflare.com_wallpaper\ \(1\).jpg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 2.0s linear;
+  height: 100vh;
+  margin: 0;
+  transition: 2.0s;
+}
+
+.checkbox {
+  opacity: 0;
+  position: absolute;
+}
+
+.label {
+  background-color: transparent;
+  border-radius: 50px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px;
+  position: absolute;
+  height: 25px;
+  width: 50px;
+  top: 90%;
+  left: 80%;
+  transform: scale(1.0);
+}
+
+.label .ball {
+  background-color: transparent;
+  border-radius: 50%;
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  height: 22px;
+  width: 22px;
+  transform: translateX(0px);
+  transition: transform 1.5s linear;
+}
+
+.checkbox:checked + .label .ball {
+  transform: translateX(24px);
+}
+
+.fa-moon {
+  color: #1b1b1bd3;
+}
+
+.fa-sun {
+  color: #ffd000d3
+}
+
+
+/* Deixar Tudo Centralizado */
+section{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-position: center;
+  background-size: cover;
+}
+
+
+/* Quadrado Transparente */
+.form-box{
+  position: relative;
+  width: 400px;
+  height: 550px;
+  background: transparent;
+  border: 2px solid #979797e8;
+  border-radius: 20px;
+  backdrop-filter: blur(9px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 25px #616161e8;
+  transition: all 0.7s ease;
+  scale: 0.9;
+}
+
+.form-box:hover{
+  transition: all 0.7s ease;
+  transform: scale(1.1);
+}
+
+
+/* Botão Do Whatzapp */
+.button-Whatzapp{
+  position: absolute;
+  cursor: pointer;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  top: 15%;
+  left: 55%;
+  border-radius: 20px;
+  width: 75%;
+  height: 40px;
+  backdrop-filter: blur(9px);
+  background: transparent;
+  border: 2px solid #979797e8;
+  color: #04f72f;
+  transition: all 0.7s ease;
+}
+
+.button-Whatzapp:hover{
+  background-color: #616161e8;
+  cursor: pointer;
+  border: 2px solid #ffffff;
+  box-shadow: 0 0 25px #616161e8;
+  transition: all 0.7s ease;
+}
+
+
+/* icons Do Whatzapp */
+.icons-Whatzapp{
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 15%;
+  left: 10%;
+  width: 50px;
+  height: 50px;
+  z-index: 2;
+}
+
+
+/* Botão Do GitHub */
+.button-GitHub{
+  position: absolute;
+  cursor: pointer;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  top: 30%;
+  left: 55%;
+  border-radius: 20px;
+  width: 75%;
+  height: 40px;
+  background: transparent;
+  border: 2px solid #979797e8;
+  color: #a704f7;
+  transition: all 0.7s ease;
+}
+
+.button-GitHub:hover{
+  background-color: #616161e8;
+  cursor: pointer;
+  border: 2px solid #ffffff;
+  box-shadow: 0 0 25px #616161e8;
+  transition: all 0.7s ease;
+}
+
+
+/* icons Do GitHub */
+.icons-GitHub{
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 30%;
+  left: 10%;
+  width: 50px;
+  height: 50px;
+  z-index: 2;
+}
+
+
+/* Botão Do TikTok */
+.button-TikTok{
+  position: absolute;
+  cursor: pointer;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  top:45%;
+  left: 55%;
+  border-radius: 20px;
+  width: 75%;
+  height: 40px;
+  background: transparent;
+  border: 2px solid #979797e8;
+  color: #3a04f7;
+  transition: all 0.7s ease;
+}
+
+.button-TikTok:hover{
+  background-color: #616161e8;
+  cursor: pointer;
+  border: 2px solid #ffffff;
+  box-shadow: 0 0 25px #616161e8;
+  transition: all 0.7s ease;
+}
+
+
+/* icons Do TikTok */
+.icons-TikTok{
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 45%;
+  left: 10%;
+  width: 50px;
+  height: 50px;
+  z-index: 2;
+}
+
+
+/* Botão Do Instagram */
+.button-Instagram{
+  position: absolute;
+  cursor: pointer;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  top:60%;
+  left: 55%;
+  border-radius: 20px;
+  width: 75%;
+  height: 40px;
+  background: transparent;
+  border: 2px solid #979797e8;
+  color: #f7044a;
+  transition: all 0.7s ease;
+}
+
+.button-Instagram:hover{
+  background-color: #616161e8;
+  cursor: pointer;
+  border: 2px solid #ffffff;
+  box-shadow: 0 0 25px #616161e8;
+  transition: all 0.7s ease;
+}
+
+
+/* icons Do Instagram */
+.icons-Instagram{
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 60%;
+  left: 10%;
+  width: 50px;
+  height: 50px;
+  z-index: 2;
+}
+
+
+/* Botão Do MeuSite */
+.button-MeuSite{
+  position: absolute;
+  cursor: pointer;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  top:75%;
+  left: 55%;
+  border-radius: 20px;
+  width: 75%;
+  height: 40px;
+  background: transparent;
+  border: 2px solid #979797e8;
+  color: #04dbf7;
+  transition: all 0.7s ease;
+}
+
+.button-MeuSite:hover{
+  background-color: #616161e8;
+  cursor: pointer;
+  border: 2px solid #ffffff;
+  box-shadow: 0 0 25px #616161e8;
+  transition: all 0.7s ease;
+}
+
+
+/* icons Do MeuSite */
+.icons-MeuSite{
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 75%;
+  left: 10%;
+  width: 50px;
+  height: 50px;
+  z-index: 2;
+}
+
+
+/* <!-- Img Do Usuário --> */
+.img1{
+  position: absolute;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+  top: 10%;
+  left: 50%;
+  width: 150px;
+  height: 150px;
+  border-radius: 50% ;
+  border: 2px solid #616161e8;
+  box-shadow: 0 0 25px #616161e8;
+  transition: all 0.7s ease;
+}
+
+.img1:hover{
+  cursor: pointer;
+  left: 51%;
+  transition: all 0.7s ease;
+  scale: 1.2;
+}
+
+
+/* Mudança De Tamanho Para Celular */
+@media screen and (max-width: 1020px){
+
+  /* Quadrado Transparente */
+  .form-box{
+    width: 200px;
+    height: 250px;
+    scale: 1.20;
+  }
+
+  .form-box:hover{
+    scale: 1.30;
+  }
+
+
+
+  /* Botão Do Whatzapp */
+  .button-Whatzapp{
+    transform: scale(0.7);
+    top: 15%;
+    left: 15%;
+  }
+
+  /* Botão Do GitHub */
+  .button-GitHub{
+    transform: scale(0.7);
+    top: 30%;
+    left: 15%;
+  }
+
+  /* Botão Do TikTok */
+  .button-TikTok{
+    transform: scale(0.7);
+    top: 45%;
+    left: 15%;
+  }
+
+  /* Botão Do Instagram */
+  .button-Instagram{
+    transform: scale(0.7);
+    top: 60%;
+    left: 15%;
+  }
+
+  /* Botão Do MeuSite */
+  .button-MeuSite{
+    transform: scale(0.7);
+    top: 75%;
+    left: 15%;
+  }
+
+
+
+/* icons Do Whatzapp */
+  .icons-Whatzapp{
+    transform: scale(0.7);
+    top: 13%;
+    left: 5%;
+  }
+
+  /* icons Do GitHub */
+  .icons-GitHub{
+    transform: scale(0.7);
+    top: 28%;
+    left: 5%;
+  }
+
+  /* icons Do TikTok */
+  .icons-TikTok{
+    transform: scale(0.7);
+    top: 43%;
+    left: 5%;
+  }
+
+  /* icons Do Instagram */
+  .icons-Instagram{
+    transform: scale(0.7);
+    top: 58%;
+    left: 5%;
+  }
+
+  /* icons Do MeuSite */
+  .icons-MeuSite{
+    transform: scale(0.7);
+    top: 73%;
+    left: 5%;
+  }
+
+
+  .label{
+    top: 85%;
+    left: 60%;
+  }
+
+
+  .img1{
+    left: 43%;
+    scale: 0.7;
+  }
+
+  .img1:hover{
+    scale: 0.8;
+    left: 45%;
+  }
+
+
+  .label{
+    top: 5%;
+    left: 70%;
+  }
+
+}
